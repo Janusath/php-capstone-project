@@ -107,5 +107,3 @@ include("../resources/views/config/db.php");
 
 </html>
 
-
-<!-- this is changes -->

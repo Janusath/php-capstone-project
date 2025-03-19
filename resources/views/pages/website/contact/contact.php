@@ -26,14 +26,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit'])) {
           $mail->isSMTP();										 
           $mail->Host	 = 'smtp.gmail.com;';				 
           $mail->SMTPAuth = true;							 
-          $mail->Username = 'mohamedahshan0056@gmail.com';				 
-          $mail->Password = 'hnho szqi ufxq mfvs';					 
+          $mail->Username = 'yourgmail.com';				 
+          $mail->Password = 'yourpassword'; // SMTP password					 
           $mail->SMTPSecure = 'tls';							 
           $mail->Port	 = 587; 
 
-          $mail->setFrom('mohamedahshan0056@gmail.com', 'This is My Blog Website');		 
-          $mail->addAddress('mohamedahshan0056@gmail.com');
-          $mail->addReplyTo('mohamedahshan0056@gmail.com', 'Admin');
+          $mail->setFrom('yourgmail@gmail.com', 'This is My Blog Website');		 
+          $mail->addAddress('yourgmail@gmail.com');
+          $mail->addReplyTo('yourgmail@gmail.com', 'Admin');
           
           $mail->isHTML(true);								 
           $mail->Subject = 'Subject'.$subject;

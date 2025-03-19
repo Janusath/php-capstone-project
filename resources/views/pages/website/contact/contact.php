@@ -30,6 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit'])) {
           $mail->Password = 'yourpassword'; // SMTP password					 
           $mail->SMTPSecure = 'tls';							 
           $mail->Port	 = 587; 
+          
 
           $mail->setFrom('yourgmail@gmail.com', 'This is My Blog Website');		 
           $mail->addAddress('yourgmail@gmail.com');
